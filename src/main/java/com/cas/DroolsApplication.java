@@ -1,5 +1,6 @@
 package com.cas;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}
  **/
 @SpringBootApplication(scanBasePackages = "com.cas")
+@MapperScan("com.cas.mapper")
 public class DroolsApplication {
 
     public static void main(String[] args) {

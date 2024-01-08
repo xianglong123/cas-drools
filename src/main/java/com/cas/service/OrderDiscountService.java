@@ -1,32 +1,27 @@
 package com.cas.service;
 
-import com.cas.bo.OrderDiscount;
-import com.cas.bo.OrderRequest;
-import org.kie.api.runtime.KieContainer;
+import com.cas.config.DroolsJarManager;
+import com.cas.crule.User;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author: xianglong[1391086179@qq.com]
+ * @date: 下午2:15 2024/1/8
+ * @version: V1.0
+ * @review:
+ */
 @Service
 public class OrderDiscountService {
 
     @Autowired
-    private KieContainer kieContainer;
+    private DroolsJarManager droolsJarManager;
 
-    public OrderDiscount getDiscount(OrderRequest orderRequest) {
-        OrderDiscount orderDiscount = new OrderDiscount();
-        // 开启会话
-        KieSession kieSession = kieContainer.newKieSession();
-        // 设置折扣对象
-        kieSession.setGlobal("orderDiscount", orderDiscount);
-        // 设置订单对象
-        kieSession.insert(orderRequest);
-        // 触发规则
-        kieSession.fireAllRules();
-        //或者  通过规则过滤器实现只执行指定规则
-		//kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("Age based discount"));
-        // 中止会话
-        kieSession.dispose();
-        return orderDiscount;
+    public void execute() {
+        KieSession kSession = droolsJarManager.getKieContainer().newKieSession();
+        kSession.insert(new User("Dave",100));
+        kSession.fireAllRules();
+        kSession.dispose();
     }
 }

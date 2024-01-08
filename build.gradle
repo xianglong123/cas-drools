@@ -31,6 +31,8 @@ dependencies {
     implementation 'org.drools:drools-core:7.59.0.Final'
     implementation 'org.drools:drools-compiler:7.59.0.Final'
     implementation 'org.drools:drools-decisiontables:7.59.0.Final'
+    implementation 'org.kie:kie-spring:7.59.0.Final'
+//    implementation fileTree(dir:'lib',includes:['*.jar'])
 
 }
 

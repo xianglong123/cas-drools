@@ -4,33 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/DroolsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/bo/OrderDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/bo/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/controller/OrderDiscountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/enums/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/service/OrderDiscountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rules/customer-discount.drl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cas/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cas/test/SimpleTest.java" afterDir="false" />
+    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/bo/DroolsRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsDrlManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsJarManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/controller/DroolsRuleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/crule/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/mapper/CasDroolsPathMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/pojo/CasDroolsPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/service/DroolsRuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cas/service/DroolsRuleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/DroolsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cas/DroolsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/bo/OrderDiscount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/bo/OrderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/controller/OrderDiscountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cas/controller/OrderDiscountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/enums/CustomerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/service/OrderDiscountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cas/service/OrderDiscountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rules/customer-discount.drl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rules/customer-discount.drl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cas/test/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cas/test/SimpleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +35,33 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cas-drools" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +86,8 @@
     "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/xianglong/IdeaProjects/cas-drools/src/main/resources",
+    "last_opened_file_path": "/Users/xianglong/IdeaProjects/cas-drools/src/main/java/com/cas/config",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "spring.configuration.checksum": "5f2f23a1210aef5aeac9f6de4c46a217"
   },
@@ -77,14 +99,47 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cas/config" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cas/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cas/bo" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cas/controller" />
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cas.config" />
+      <recent name="com.cas.mapper" />
+      <recent name="com.cas.crule" />
       <recent name="com.cas.test" />
       <recent name="com.cas" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SimpleTest.test2">
+  <component name="RunManager" selected="Spring Boot.DroolsApplication">
+    <configuration name="DroolsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.DroolsApplication" />
+      <module name="cas-drools.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JarTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.JarTest" />
+      <module name="cas-drools.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleTest.test2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -99,6 +154,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.cas.test.SimpleTest.test2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SimpleTest.test3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.cas.test.SimpleTest.test3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,8 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SimpleTest.test2" />
         <item itemvalue="Spring Boot.DroolsApplication" />
+        <item itemvalue="Gradle.SimpleTest.test3" />
+        <item itemvalue="Application.DroolsApplication" />
+        <item itemvalue="Application.JarTest" />
+        <item itemvalue="Gradle.SimpleTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -137,8 +218,16 @@
       <option name="presentableId" value="Default" />
       <updated>1703838035113</updated>
       <workItem from="1703838038530" duration="1638000" />
-      <workItem from="1704201163465" duration="695000" />
+      <workItem from="1704201163465" duration="30742000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1704261632986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704261632986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +243,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cas/config/DroolsDrlManager.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cas/config/DroolsDrlManager.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cas/config/DroolsDrlManager.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

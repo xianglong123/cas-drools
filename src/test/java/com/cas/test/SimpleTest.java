@@ -2,8 +2,6 @@ package com.cas.test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.cas.DroolsApplication;
-import com.cas.bo.OrderDiscount;
-import com.cas.bo.OrderRequest;
 import com.cas.service.OrderDiscountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static com.cas.enums.CustomerType.LOYAL;
 
 /**
  * @description:
@@ -30,24 +27,9 @@ public class SimpleTest {
     private OrderDiscountService orderDiscountService;
 
 
-    /**
-     * {
-     *     "customerNumber":"123456",
-     *     "age":20,
-     *     "amount":20000,
-     *     "customerType":"LOYAL"
-     * }
-     */
     @Test
-    public void test2() {
-        OrderRequest orderRequest = new OrderRequest();
-        orderRequest.setAge(19);
-        orderRequest.setAmount(20000);
-        orderRequest.setCustomerNumber("123456");
-        orderRequest.setCustomerType(LOYAL);
-        OrderDiscount discount = orderDiscountService.getDiscount(orderRequest);
-        System.out.println(JSONObject.toJSONString(discount));
-
+    public void test3() {
+        orderDiscountService.execute();
     }
 
 
