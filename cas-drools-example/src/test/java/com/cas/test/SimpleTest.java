@@ -1,6 +1,5 @@
 package com.cas.test;
 
-import com.alibaba.fastjson.JSONObject;
 import com.cas.DroolsApplication;
 import com.cas.service.OrderDiscountService;
 import org.junit.Test;

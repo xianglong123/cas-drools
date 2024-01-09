@@ -1,12 +1,6 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.cas.crule;
 
 import java.io.Serializable;
-import org.kie.api.definition.type.Label;
 
 /**
  * @author: xianglong[1391086179@qq.com]
@@ -16,9 +10,7 @@ import org.kie.api.definition.type.Label;
  */
 public class User implements Serializable {
     static final long serialVersionUID = 1L;
-    @Label("姓名")
     private String name;
-    @Label("年龄")
     private Integer age;
 
     public User() {

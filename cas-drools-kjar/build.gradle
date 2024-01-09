@@ -1,0 +1,32 @@
+plugins {
+    id 'maven-publish'
+    id 'io.github.kevin-wimmer.kjar' version '7.73.0.Final'
+}
+group = 'com.cas'
+version = '1.0.0'
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+dependencies {
+    implementation project(':cas-drools-pojo')
+    implementation 'org.drools:drools-core:7.73.0.Final'
+    implementation 'com.google.guava:guava:31.1-jre'
+}
+
+// 配置发布插件
+publishing {
+    repositories {
+        mavenLocal() // 发布到本地仓库
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            // 配置Jar文件的元数据信息
+            artifactId project.name
+            groupId project.group
+            version project.version
+        }
+    }
+}

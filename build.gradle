@@ -2,40 +2,37 @@ plugins {
     id 'org.springframework.boot' version '2.2.1.RELEASE'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id 'io.freefair.lombok' version '5.0.0-rc6' apply false
 }
 
 group 'com.cas'
 version '0.0.1-SNAPSHOT'
 
-repositories {
-    maven { url 'https://maven.aliyun.com/repository/public/' }
-    mavenLocal()
-    mavenCentral()
-}
-
-dependencies {
-    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
-
-    implementation 'com.alibaba:fastjson:1.2.61'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation("cn.hutool:hutool-all:5.7.7")
-
-    implementation 'com.alibaba:druid-spring-boot-starter:1.1.10'
-    implementation 'mysql:mysql-connector-java:8.0.13'
-    implementation 'com.baomidou:mybatis-plus-boot-starter:3.4.2'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation "org.projectlombok:lombok:1.18.12"
-
-    implementation 'org.drools:drools-core:7.59.0.Final'
-    implementation 'org.drools:drools-compiler:7.59.0.Final'
-    implementation 'org.drools:drools-decisiontables:7.59.0.Final'
-    implementation 'org.kie:kie-spring:7.59.0.Final'
-//    implementation fileTree(dir:'lib',includes:['*.jar'])
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+    }
 
 }
 
-test {
-    useJUnitPlatform()
+subprojects { // 子模块的通用配置
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'idea'
+
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/central/'}
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
 }
+

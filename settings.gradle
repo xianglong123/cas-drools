@@ -1,2 +1,5 @@
 rootProject.name = 'cas-drools'
+include 'cas-drools-example'
+include 'cas-drools-kjar'
+include 'cas-drools-pojo'
 

@@ -1,0 +1,13 @@
+package com.cas.crule;
+
+import com.cas.crule.User;
+
+
+// 规则1: 根据年龄判断
+rule "Age based discount"
+    when
+        $user:User(age > 20);
+    then
+        $user.setName("xl22222222");
+        System.out.println("==========Adding 10% discount for Kids/ senior customer=============" + $user.getName());
+end

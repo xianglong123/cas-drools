@@ -1,11 +1,12 @@
 package com.cas.controller;
 
 import com.cas.service.OrderDiscountService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author: xianglong[1391086179@qq.com]
@@ -14,10 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @review:
  */
 @RestController
-public class OrderDiscountController {
+public class JarController {
 
-    @Autowired
+    @Resource
     private OrderDiscountService orderDiscountService;
+
+    @PostMapping("/init")
+    public ResponseEntity<?> init() {
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 
     @PostMapping("/test")
     public ResponseEntity<?> test() {

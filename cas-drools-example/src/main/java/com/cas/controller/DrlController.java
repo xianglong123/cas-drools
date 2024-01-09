@@ -2,7 +2,6 @@ package com.cas.controller;
 
 import com.cas.bo.DroolsRule;
 import com.cas.config.DroolsDrlManager;
-import com.cas.config.DroolsJarManager;
 import com.cas.service.DroolsRuleService;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,14 +16,12 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/drools/rule")
-public class DroolsRuleController {
+public class DrlController {
 
     @Resource
     private DroolsRuleService droolsRuleService;
     @Resource
     private DroolsDrlManager droolsManager;
-    @Resource
-    private DroolsJarManager droolsJarManager;
 
     @GetMapping("findAll")
     public List<DroolsRule> findAll() {
