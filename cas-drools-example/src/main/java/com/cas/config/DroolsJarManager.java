@@ -3,29 +3,18 @@ package com.cas.config;
 import com.cas.bo.DroolsRule;
 import org.drools.compiler.kie.builder.impl.InternalKieModule;
 import org.drools.compiler.kie.builder.impl.KieContainerImpl;
-import org.drools.core.io.impl.UrlResource;
-import org.kie.api.KieBase;
 import org.kie.api.KieServices;
-import org.kie.api.builder.KieBuilder;
-import org.kie.api.builder.KieFileSystem;
 import org.kie.api.builder.KieModule;
 import org.kie.api.builder.KieRepository;
 import org.kie.api.builder.KieScanner;
-import org.kie.api.builder.Message;
 import org.kie.api.builder.ReleaseId;
-import org.kie.api.builder.Results;
-import org.kie.api.builder.model.KieBaseModel;
-import org.kie.api.builder.model.KieModuleModel;
 import org.kie.api.runtime.KieContainer;
-import org.kie.api.runtime.KieSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.io.File;
 import java.io.FileInputStream;
 
 /**
@@ -64,10 +53,11 @@ public class DroolsJarManager {
         ReleaseId releaseId = ks.newReleaseId("com.cas", "cas-drools-kjar", "1.0.0");
 
         kieContainer = ks.newKieContainer(releaseId);
-//        KieScanner kScanner = ks.newKieScanner(kieContainer);
+        KieScanner kScanner = ks.newKieScanner(kieContainer);
 
         // Start the KieScanner polling the Maven repository every 10 seconds
-//        kScanner.start(10000L);
+        kScanner.start(10000L);
+        kScanner.addListener(new KieScannerListener());
     }
 
 

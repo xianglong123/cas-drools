@@ -4,36 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="实现了通过jar和drl文件动态更新规则，jar通过前端生成而来">
-      <change afterPath="$PROJECT_DIR$/cas-drools-example/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScennerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-kjar/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/user.drl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-pojo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-drools-pojo/src/main/java/com/cas/crule/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="通过kie-gradle-plugin打包kie类jar包到本地">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/DroolsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/DroolsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/bo/DroolsRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/bo/DroolsRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsDrlManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsDrlManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/config/DroolsJarManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/controller/DroolsRuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/controller/DrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/controller/OrderDiscountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/controller/JarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/crule/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/mapper/CasDroolsPathMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/mapper/CasDroolsPathMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/pojo/CasDroolsPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/pojo/CasDroolsPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/service/DroolsRuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/DroolsRuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/service/DroolsRuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/DroolsRuleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cas/service/OrderDiscountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/OrderDiscountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rules/customer-discount.drl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cas/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/test/java/com/cas/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cas/test/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/test/java/com/cas/test/SimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScennerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScannerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-kjar/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-kjar/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-pojo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-pojo/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,17 +45,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="cas-drools" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="cas-drools" type="f1a62948:ProjectNode" />
-                <item name="cas-drools-example" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="cas-drools" type="f1a62948:ProjectNode" />
-                <item name="cas-drools-example" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -223,7 +190,7 @@
       <command value="gradle cas-drools-kjar:kjar" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DroolsApplication (1)">
+  <component name="RunManager" selected="Gradle.cas-drools:cas-drools-kjar [publishMavenJavaPublicationToMavenLocal]">
     <configuration name="cas-drools [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -355,7 +322,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703838035113</updated>
       <workItem from="1703838038530" duration="1638000" />
-      <workItem from="1704201163465" duration="52918000" />
+      <workItem from="1704201163465" duration="55445000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1704261632986</created>
@@ -371,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704704947066</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="通过kie-gradle-plugin打包kie类jar包到本地">
+      <created>1704782194140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704782194140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,24 +366,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="实现了通过jar和drl文件动态更新规则，jar通过前端生成而来" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了通过jar和drl文件动态更新规则，jar通过前端生成而来" />
+    <MESSAGE value="通过kie-gradle-plugin打包kie类jar包到本地" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过kie-gradle-plugin打包kie类jar包到本地" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java</url>
-          <line>81</line>
+          <line>71</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java</url>
-          <line>92</line>
+          <line>82</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java</url>
-          <line>63</line>
+          <line>52</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
