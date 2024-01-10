@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/cas-drools-example" />
             <option value="$PROJECT_DIR$/cas-drools-kjar" />
             <option value="$PROJECT_DIR$/cas-drools-pojo" />
+            <option value="$PROJECT_DIR$/cas-drools-service" />
           </set>
         </option>
       </GradleProjectSettings>

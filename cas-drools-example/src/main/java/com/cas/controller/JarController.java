@@ -30,4 +30,10 @@ public class JarController {
         orderDiscountService.execute();
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
+
+    @PostMapping("/pay")
+    public ResponseEntity<?> pay() {
+        orderDiscountService.pay();
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 }

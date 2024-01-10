@@ -1,7 +1,7 @@
 package com.cas.mapper;
 
-import com.cas.pojo.CasDroolsPath;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.cas.pojo.CasDroolsPath;
 import org.springframework.stereotype.Repository;
 
 /**

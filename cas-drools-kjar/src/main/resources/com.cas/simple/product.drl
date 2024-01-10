@@ -1,0 +1,21 @@
+//package com.cas.crule;
+//
+//import com.cas.crule.Product;
+//
+//
+//// 规则1: 根据年龄判断
+//rule "A"
+//    when
+//        $product:Product(price > 20);
+//    then
+//        $product.setPrice($product.getPrice() - 20);
+//        System.out.println("测试结果" + $product.getPrice());
+//end
+//
+//rule "B"
+//    when
+//        $product:Product(price > 20);
+//    then
+//        $product.setPrice($product.getPrice() - 20);
+//        System.out.println("测试结果" + $product.getPrice());
+//end

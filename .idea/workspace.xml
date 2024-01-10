@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="通过kie-gradle-plugin打包kie类jar包到本地">
+    <list default="true" id="95b49550-4ac0-4904-8a53-6405bf02f187" name="Changes" comment="实现打包进行动态刷新规则，用gradle打包">
+      <change afterPath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/comple/pay.drl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/simple/product.drl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/simple/user2.drl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-drools-pojo/src/main/java/com/cas/crule/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-drools-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/service/PrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-drools-example/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScennerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScannerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/DroolsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/DroolsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/bo/DroolsRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/bo/DroolsRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsDrlManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/config/DroolsDrlManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/DroolsJarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/config/DroolsJarManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/config/KieScannerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/config/KieScannerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/controller/JarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/controller/JarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/mapper/CasDroolsPathMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/mapper/CasDroolsPathMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/pojo/CasDroolsPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/pojo/CasDroolsPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/DroolsRuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/service/DroolsRuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/DroolsRuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/service/DroolsRuleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-example/src/main/java/com/cas/service/OrderDiscountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/service/OrderDiscountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-drools-kjar/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-kjar/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/user.drl" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/simple/user.drl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-drools-pojo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-drools-pojo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,8 +170,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/xianglong/IdeaProjects/cas-drools/cas-drools-kjar",
+    "last_opened_file_path": "/Users/xianglong/IdeaProjects/cas-drools/cas-drools-service/src/main/java/com/cas",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "spring.configuration.checksum": "5f2f23a1210aef5aeac9f6de4c46a217"
   },
@@ -166,21 +186,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cas-drools-kjar" />
-      <recent name="$PROJECT_DIR$/cas-drools-kjar/src/main/resources" />
+      <recent name="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas" />
+      <recent name="$PROJECT_DIR$/cas-drools-service/src/main/java/com/cas/service" />
+      <recent name="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/simple" />
+      <recent name="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/comple" />
       <recent name="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/cas/config" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/cas/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cas-drools-kjar/src/main/resources/com.cas/simple" />
       <recent name="$PROJECT_DIR$/cas-drools-example/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cas.bo" />
       <recent name="com.cas.config" />
       <recent name="com.cas.mapper" />
       <recent name="com.cas.crule" />
       <recent name="com.cas.test" />
-      <recent name="com.cas" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -322,7 +343,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703838035113</updated>
       <workItem from="1703838038530" duration="1638000" />
-      <workItem from="1704201163465" duration="55445000" />
+      <workItem from="1704201163465" duration="60445000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1704261632986</created>
@@ -345,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704782194140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="实现打包进行动态刷新规则，用gradle打包">
+      <created>1704785691753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704785691753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +395,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="实现了通过jar和drl文件动态更新规则，jar通过前端生成而来" />
     <MESSAGE value="通过kie-gradle-plugin打包kie类jar包到本地" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过kie-gradle-plugin打包kie类jar包到本地" />
+    <MESSAGE value="实现打包进行动态刷新规则，用gradle打包" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现打包进行动态刷新规则，用gradle打包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,6 +14,7 @@ import org.kie.api.builder.model.KieBaseModel;
 import org.kie.api.builder.model.KieModuleModel;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -29,6 +30,7 @@ import java.util.List;
  * @review:
  */
 @Component
+@MapperScan("com.cas.mapper")
 public class DroolsDrlManager {
 
     private static final Logger log = LoggerFactory.getLogger(DroolsDrlManager.class);

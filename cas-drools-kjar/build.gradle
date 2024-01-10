@@ -9,6 +9,7 @@ repositories {
 }
 dependencies {
     implementation project(':cas-drools-pojo')
+    implementation project(':cas-drools-service')
     implementation 'org.drools:drools-core:7.73.0.Final'
     implementation 'com.google.guava:guava:31.1-jre'
 }
